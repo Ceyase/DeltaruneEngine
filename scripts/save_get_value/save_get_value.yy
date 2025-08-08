@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"save_get_value",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"save_get_value",
+  "parent":{
+    "name":"Saves",
+    "path":"folders/Scripts/Saves.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

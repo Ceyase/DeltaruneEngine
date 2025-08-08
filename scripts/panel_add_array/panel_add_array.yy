@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"panel_add_array",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"panel_add_array",
+  "parent":{
+    "name":"Panel",
+    "path":"folders/Scripts/UI/Panel.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

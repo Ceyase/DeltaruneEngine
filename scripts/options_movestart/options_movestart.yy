@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"options_movestart",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"options_movestart",
+  "parent":{
+    "name":"Options",
+    "path":"folders/Scripts/Options.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

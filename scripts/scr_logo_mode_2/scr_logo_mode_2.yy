@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_logo_mode_2",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_logo_mode_2",
+  "parent":{
+    "name":"LogoMode",
+    "path":"folders/Objects/Logo/LogoMode.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

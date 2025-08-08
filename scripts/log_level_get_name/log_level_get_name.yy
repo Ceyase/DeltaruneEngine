@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"log_level_get_name",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"log_level_get_name",
+  "parent":{
+    "name":"Log",
+    "path":"folders/Scripts/Log.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

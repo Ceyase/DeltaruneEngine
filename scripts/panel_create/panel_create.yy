@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"panel_create",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"panel_create",
+  "parent":{
+    "name":"Panel",
+    "path":"folders/Scripts/UI/Panel.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

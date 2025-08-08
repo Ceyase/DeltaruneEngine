@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"save_preview",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"save_preview",
+  "parent":{
+    "name":"Saves",
+    "path":"folders/Scripts/Saves.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

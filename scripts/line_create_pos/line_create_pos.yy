@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"line_create_pos",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"line_create_pos",
+  "parent":{
+    "name":"Lines",
+    "path":"folders/Scripts/UI/Lines.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
