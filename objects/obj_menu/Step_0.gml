@@ -6,6 +6,7 @@ if (current_state == "START"){
 			options = options_set(options,"A");
 		}else if (options_get(options) == "Erase"){
 			current_state = "ERASE"
+			title_message = "Choose a file to erase.";
             options = options_set(options,"A");
 		}else if (options_get(options) == "Exit"){
 			game_end();
@@ -137,7 +138,7 @@ else if (current_state == "CONFIRM_ERASE_FINAL") {
 		if (options_get(options) == "Yes") {
 			//execute_erase(temp_selection)
 			current_state = "START"
-			title_message = "Please select a file.";
+			title_message = "Erase complete.";
 			options = options_set(options,temp_selection);
 		} else {
 			current_state = "START"

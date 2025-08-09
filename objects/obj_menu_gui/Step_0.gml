@@ -8,7 +8,7 @@ event_user(0);
 if(title_message != _p_title_message){
 	_p_title_message = title_message;
 	instance_destroy(tip);
-	tip = text_create(80,60,prifix+title_message);
+	tip = text_create(80,60,prefix+title_message);
 }
 
 if(current_state != _p_current_state){
@@ -87,10 +87,77 @@ else if (current_state == "CONFIRM_COPY") {
 else if (current_state == "CONFIRM_COPY_FINAL") {
 }
 else if (current_state == "ERASE") {
+	switch_color();
+	text_copy.text_visible = false;
+	text_erase.text_visible = false;
+	text_exit.text_visible = false;
+	text_cancel.text_visible = true;
 }
 else if (current_state == "CONFIRM_ERASE") {
+	option_anim = temp_selection;
+	switch_color();
+	text_copy.text_visible = false;
+	text_erase.text_visible = false;
+	text_exit.text_visible = false;
+	text_cancel.text_visible = true;
+	var nodes1;
+	var nodes2;
+	if (temp_selection == "A"){
+		nodes1 = [text1_1,text2_1,text3_1];
+		nodes2 = [text6_1,text7_1,text8_1];
+	}else if (temp_selection == "B"){
+		nodes1 = [text1_2,text2_2,text3_2];
+		nodes2 = [text6_2,text7_2,text8_2];
+	}else if (temp_selection == "C"){
+		nodes1 = [text1_3,text2_3,text3_3];
+		nodes2 = [text6_3,text7_3,text8_3];
+	}
+	array_foreach(nodes1,function(value){value.text_visible = false;});
+	array_foreach(nodes2,function(value){value.text_visible = true;});
+	var list;
+	if(option == "Yes"){
+		list = [text6_1,text6_2,text6_3];
+	}else{
+		list = [text7_1,text7_2,text7_3];
+	}
+	array_foreach(list,function(value){
+		value.text_color = #FFFFFF;
+	});
 }
 else if (current_state == "CONFIRM_ERASE_FINAL") {
+	text_copy.text_visible = false;
+	text_erase.text_visible = false;
+	text_exit.text_visible = false;
+	text_cancel.text_visible = true;
+	var nodes1;
+	var nodes2;
+	if (temp_selection == "A"){
+		nodes1 = [text1_1,text2_1,text3_1];
+		nodes2 = [text9_1,text10_1,text11_1];
+		board_1.image_blend = #FF0000;
+		text9_1.text_color = #FF0000;
+	}else if (temp_selection == "B"){
+		nodes1 = [text1_2,text2_2,text3_2];
+		nodes2 = [text9_2,text10_2,text11_2];
+		board_2.image_blend = #FF0000;
+		text9_2.text_color = #FF0000;
+	}else if (temp_selection == "C"){
+		nodes1 = [text1_3,text2_3,text3_3];
+		nodes2 = [text9_3,text10_3,text11_3];
+		board_3.image_blend = #FF0000;
+		text9_3.text_color = #FF0000;
+	}
+	array_foreach(nodes1,function(value){value.text_visible = false;});
+	array_foreach(nodes2,function(value){value.text_visible = true;});
+	var list;
+	if(option == "Yes"){
+		list = [text10_1,text10_2,text10_3];
+	}else{
+		list = [text11_1,text11_2,text11_3];
+	}
+	array_foreach(list,function(value){
+		value.text_color = #FFFFFF;
+	});
 }
 else if (current_state == "CONFIRM_ACTION") {
 	if (temp_selection == "A"){
