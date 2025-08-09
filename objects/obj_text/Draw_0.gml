@@ -1,3 +1,3 @@
-if(text_visible){
+if(text_visible && scribble_node != undefined){
 	scribble_node.draw(x,y);
 }
