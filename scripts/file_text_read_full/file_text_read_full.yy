@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"file_text_read_full",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"file_text_read_full",
+  "parent":{
+    "name":"Tools",
+    "path":"folders/Scripts/Tools.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

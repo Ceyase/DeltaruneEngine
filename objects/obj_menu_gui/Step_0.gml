@@ -163,22 +163,25 @@ else if (current_state == "CONFIRM_ACTION") {
 	if (temp_selection == "A"){
 		board_1.image_blend = #FFFFFF;
 		text2_1.text_visible = false;
-		text4_1.text_visible = true;
+		text4_1.text_visible = struct_exists(preview,"save0");
 		text5_1.text_visible = true;
+		text12_1.text_visible = !text4_1.text_visible;
 	}else if (temp_selection == "B"){
 		board_2.image_blend = #FFFFFF;
 		text2_2.text_visible = false;
-		text4_2.text_visible = true;
+		text4_2.text_visible = struct_exists(preview,"save1");
 		text5_2.text_visible = true;
+		text12_2.text_visible = !text4_2.text_visible;
 	}else if (temp_selection == "C"){
 		board_3.image_blend = #FFFFFF;
 		text2_3.text_visible = false;
-		text4_3.text_visible = true;
+		text4_3.text_visible = struct_exists(preview,"save2");
 		text5_3.text_visible = true;
+		text12_3.text_visible = !text4_3.text_visible;
 	}
 	var list;
 	if(option == "Yes"){
-		list = [text4_1,text4_2,text4_3];
+		list = [text4_1,text4_2,text4_3,text12_1,text12_2,text12_3];
 	}else{
 		list = [text5_1,text5_2,text5_3];
 	}

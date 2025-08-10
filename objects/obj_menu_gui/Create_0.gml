@@ -1,4 +1,5 @@
 root = obj_menu;
+preview = save_preview();
 
 current_state = root.current_state;
 _p_current_state = current_state;
@@ -11,8 +12,6 @@ title_message = root.title_message;
 _p_title_message = root.title_message;
 
 temp_selection = root.temp_selection;
-
-
 
 prefix = "[fnt_main][scale,2][fa_left][fa_top]";
 heart = instance_create_depth(139,153,0,obj_ui_heart);
@@ -41,6 +40,7 @@ text7_1 = text_create(360,153,prefix+"No");
 text9_1 = text_create(160,120,prefix+"Really erase it?");
 text10_1 = text_create(180,153,prefix+"Yes!");
 text11_1 = text_create(360,153,prefix+"No!");
+text12_1 = text_create(180,153,prefix+"Start");
 
 // Game Save Slot #2
 board_2 = panel_create();
@@ -60,6 +60,7 @@ text7_2 = text_create(360,153+90,prefix+"No");
 text9_2 = text_create(160,120+90,prefix+"Really erase it?");
 text10_2 = text_create(180,153+90,prefix+"Yes!");
 text11_2 = text_create(360,153+90,prefix+"No!");
+text12_2 = text_create(180,153+90,prefix+"Start");
 
 // Game Save Slot #3
 board_3 = panel_create();
@@ -79,6 +80,9 @@ text7_3 = text_create(360,153+180,prefix+"No");
 text9_3 = text_create(160,120+180,prefix+"Really erase it?");
 text10_3 = text_create(180,153+180,prefix+"Yes!");
 text11_3 = text_create(360,153+180,prefix+"No!");
+text12_3 = text_create(180,153+180,prefix+"Start");
+
+event_user(1);
 
 text_copy = text_create(108,380,prefix+"Copy");
 text_erase = text_create(280,380,prefix+"Erase");

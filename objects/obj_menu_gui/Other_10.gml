@@ -21,6 +21,7 @@ text8_1,text8_2,text8_3,
 text9_1,text9_2,text9_3,
 text10_1,text10_2,text10_3,
 text11_1,text11_2,text11_3,
+text12_1,text12_2,text12_3,
 text_cancel];
 array_foreach(list,function(value){
 	value.text_visible = false;

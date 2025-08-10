@@ -37,6 +37,9 @@ else if (current_state == "COPY") {
 			title_message = "Please select a file.";
 			options = options_set(options,"Copy");
 		}
+		else if(empty_check(options_get(options))){
+			title_message = "It can't be copied.";
+		}
 		else {
 			temp_selection = options_get(options);
 			current_state = "CONFIRM_COPY";
